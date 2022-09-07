@@ -281,7 +281,7 @@ Array mesh_load(char* filename, Material material) { //filename expected to be s
 		array_add(&triangles, &tr);
 	}
 	fclose(fp);
-	printf("Triangles: %zd\n", triangles.count);
+	printf("Triangles: %d\n", triangles.count);
 	return triangles;
 fp_error:
 	array_init(&triangles, sizeof(Surface), 1);
